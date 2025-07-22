@@ -9,10 +9,14 @@ namespace DSA
     {
         static async Task Main(string[] args)
         {
-            int[] nums = { 4, 1, 3, 9, 7 };
+            int[] nums = { 8, 2, 5, 3, 4, 7, 6, 1 };
             List<int> numsList = nums.ToList();
-            InsertionSort s = new InsertionSort();
-            s.SortArrayUsingInsertionSort(numsList);
+            MergeSort s = new MergeSort();
+            s.SortArrayUsingMergeSort(nums);
+            for (int i = 0; i < nums.Length; i++)
+            {
+                Console.Write(nums[i] + " ");
+            }
         }
     }
 }
